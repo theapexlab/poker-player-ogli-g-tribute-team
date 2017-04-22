@@ -3,6 +3,7 @@ const test = require('tape')
 const Player = require('./Player')
 const gameStateFixture = require('./test/game-state.json')
 const cards2Table = require('./cards-2-table')
+const myStack = require('./my-stack')
 
 // test.skip('correct card value',
 //   function (t) {
@@ -50,6 +51,13 @@ test('cards 2 table percentage should work', (t) => {
   cards = [{rank: '8', suit: 'spades'}, {rank: '5', suit: 'clubs'}]
   t.equal(cards2Table.getPercentage(cards), 78.3)
 
+  t.end()
+})
+
+test.only('my stack', (t) => {
+  const resp = myStack.calculate(gameStateFixture)
+  t.equal(resp, 79.5)
+  console.log(resp)
   t.end()
 })
 
