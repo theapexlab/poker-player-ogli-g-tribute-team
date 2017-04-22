@@ -36,6 +36,10 @@ function isRaised (gameState) {
   return gameState.pot > (gameState.small_blind * 5)
 }
 
+function debugLog (cards, raised, myPlayer) {
+  console.log(cards2Table.convert(cards), raised, myPlayer.stack)
+}
+
 class Player {
   static get VERSION () {
     return '0.1'
@@ -58,10 +62,12 @@ class Player {
     // }
 
     if (!raised && percentage < 18) {
-      console.log(cards, raised)
+      debugLog(cards, raised, myPlayer.stack)
+      console.log()
       bet(myPlayer.stack)
     } else if (raised && percentage < 6) {
-      console.log(cards, raised)
+      debugLog(cards, raised)
+      console.log()
       bet(myPlayer.stack)
     } else {
       bet(0)
