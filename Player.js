@@ -39,7 +39,7 @@ function isRaised (gameState) {
 }
 
 function debugLog (cards, raised, myPlayer) {
-  console.log(cards2Table.convert(cards), raised, myPlayer.stack)
+  console.log(cards2Table.convert(cards), raised, myPlayer)
 }
 
 class Player {
@@ -65,13 +65,13 @@ class Player {
     // }
 
     if (!raised && percentage < 18) {
-      debugLog(cards, raised, myPlayer.stack)
-      console.log()
       bet(myPlayer.stack)
+      debugLog(cards, raised, myPlayer)
+      console.log()
     } else if (raised && percentage < 6) {
-      debugLog(cards, raised)
-      console.log()
       bet(myPlayer.stack)
+      debugLog(cards, raised, myPlayer)
+      console.log()
     } else {
       bet(0)
     }
