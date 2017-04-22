@@ -1,0 +1,450 @@
+[
+  {
+    "eff_stack_max": 10000,
+    "eff_stack_min": 31,
+    "folded": "TRUE",
+    "percentage": 22,
+    "players_behind": 1
+  },
+  {
+    "eff_stack_max": 10000,
+    "eff_stack_min": 31,
+    "folded": "TRUE",
+    "percentage": 13,
+    "players_behind": 2
+  },
+  {
+    "eff_stack_max": 10000,
+    "eff_stack_min": 31,
+    "folded": "TRUE",
+    "percentage": 11,
+    "players_behind": 3
+  },
+  {
+    "eff_stack_max": 10000,
+    "eff_stack_min": 31,
+    "folded": "TRUE",
+    "percentage": 7,
+    "players_behind": 4
+  },
+  {
+    "eff_stack_max": 10000,
+    "eff_stack_min": 31,
+    "folded": "FALSE",
+    "percentage": 7,
+    "players_behind": 0
+  },
+  {
+    "eff_stack_max": 10000,
+    "eff_stack_min": 31,
+    "folded": "FALSE",
+    "percentage": 7,
+    "players_behind": 1
+  },
+  {
+    "eff_stack_max": 10000,
+    "eff_stack_min": 31,
+    "folded": "FALSE",
+    "percentage": 7,
+    "players_behind": 2
+  },
+  {
+    "eff_stack_max": 10000,
+    "eff_stack_min": 31,
+    "folded": "FALSE",
+    "percentage": 7,
+    "players_behind": 3
+  },
+  {
+    "eff_stack_max": 30,
+    "eff_stack_min": 26,
+    "folded": "TRUE",
+    "percentage": 49,
+    "players_behind": 1
+  },
+  {
+    "eff_stack_max": 30,
+    "eff_stack_min": 26,
+    "folded": "TRUE",
+    "percentage": 31,
+    "players_behind": 2
+  },
+  {
+    "eff_stack_max": 30,
+    "eff_stack_min": 26,
+    "folded": "TRUE",
+    "percentage": 22,
+    "players_behind": 3
+  },
+  {
+    "eff_stack_max": 30,
+    "eff_stack_min": 26,
+    "folded": "TRUE",
+    "percentage": 16,
+    "players_behind": 4
+  },
+  {
+    "eff_stack_max": 30,
+    "eff_stack_min": 26,
+    "folded": "FALSE",
+    "percentage": 18,
+    "players_behind": 0
+  },
+  {
+    "eff_stack_max": 30,
+    "eff_stack_min": 26,
+    "folded": "FALSE",
+    "percentage": 18,
+    "players_behind": 1
+  },
+  {
+    "eff_stack_max": 30,
+    "eff_stack_min": 26,
+    "folded": "FALSE",
+    "percentage": 13,
+    "players_behind": 2
+  },
+  {
+    "eff_stack_max": 30,
+    "eff_stack_min": 26,
+    "folded": "FALSE",
+    "percentage": 13,
+    "players_behind": 3
+  },
+  {
+    "eff_stack_max": 25,
+    "eff_stack_min": 21,
+    "folded": "TRUE",
+    "percentage": 49,
+    "players_behind": 1
+  },
+  {
+    "eff_stack_max": 25,
+    "eff_stack_min": 21,
+    "folded": "TRUE",
+    "percentage": 31,
+    "players_behind": 2
+  },
+  {
+    "eff_stack_max": 25,
+    "eff_stack_min": 21,
+    "folded": "TRUE",
+    "percentage": 22,
+    "players_behind": 3
+  },
+  {
+    "eff_stack_max": 25,
+    "eff_stack_min": 21,
+    "folded": "TRUE",
+    "percentage": 16,
+    "players_behind": 4
+  },
+  {
+    "eff_stack_max": 25,
+    "eff_stack_min": 21,
+    "folded": "FALSE",
+    "percentage": 18,
+    "players_behind": 0
+  },
+  {
+    "eff_stack_max": 25,
+    "eff_stack_min": 21,
+    "folded": "FALSE",
+    "percentage": 18,
+    "players_behind": 1
+  },
+  {
+    "eff_stack_max": 25,
+    "eff_stack_min": 21,
+    "folded": "FALSE",
+    "percentage": 13,
+    "players_behind": 2
+  },
+  {
+    "eff_stack_max": 25,
+    "eff_stack_min": 21,
+    "folded": "FALSE",
+    "percentage": 13,
+    "players_behind": 3
+  },
+  {
+    "eff_stack_max": 20,
+    "eff_stack_min": 19,
+    "folded": "TRUE",
+    "percentage": 49,
+    "players_behind": 1
+  },
+  {
+    "eff_stack_max": 20,
+    "eff_stack_min": 19,
+    "folded": "TRUE",
+    "percentage": 31,
+    "players_behind": 2
+  },
+  {
+    "eff_stack_max": 20,
+    "eff_stack_min": 19,
+    "folded": "TRUE",
+    "percentage": 22,
+    "players_behind": 3
+  },
+  {
+    "eff_stack_max": 20,
+    "eff_stack_min": 19,
+    "folded": "TRUE",
+    "percentage": 16,
+    "players_behind": 4
+  },
+  {
+    "eff_stack_max": 20,
+    "eff_stack_min": 19,
+    "folded": "FALSE",
+    "percentage": 18,
+    "players_behind": 0
+  },
+  {
+    "eff_stack_max": 20,
+    "eff_stack_min": 19,
+    "folded": "FALSE",
+    "percentage": 18,
+    "players_behind": 1
+  },
+  {
+    "eff_stack_max": 20,
+    "eff_stack_min": 19,
+    "folded": "FALSE",
+    "percentage": 13,
+    "players_behind": 2
+  },
+  {
+    "eff_stack_max": 20,
+    "eff_stack_min": 19,
+    "folded": "FALSE",
+    "percentage": 13,
+    "players_behind": 3
+  },
+  {
+    "eff_stack_max": 18,
+    "eff_stack_min": 17,
+    "folded": "TRUE",
+    "percentage": 62,
+    "players_behind": 1
+  },
+  {
+    "eff_stack_max": 18,
+    "eff_stack_min": 17,
+    "folded": "TRUE",
+    "percentage": 37,
+    "players_behind": 2
+  },
+  {
+    "eff_stack_max": 18,
+    "eff_stack_min": 17,
+    "folded": "TRUE",
+    "percentage": 25,
+    "players_behind": 3
+  },
+  {
+    "eff_stack_max": 18,
+    "eff_stack_min": 17,
+    "folded": "TRUE",
+    "percentage": 22,
+    "players_behind": 4
+  },
+  {
+    "eff_stack_max": 18,
+    "eff_stack_min": 17,
+    "folded": "FALSE",
+    "percentage": 21.5,
+    "players_behind": 0
+  },
+  {
+    "eff_stack_max": 18,
+    "eff_stack_min": 17,
+    "folded": "FALSE",
+    "percentage": 21.5,
+    "players_behind": 1
+  },
+  {
+    "eff_stack_max": 18,
+    "eff_stack_min": 17,
+    "folded": "FALSE",
+    "percentage": 17.5,
+    "players_behind": 2
+  },
+  {
+    "eff_stack_max": 18,
+    "eff_stack_min": 17,
+    "folded": "FALSE",
+    "percentage": 17.5,
+    "players_behind": 3
+  },
+  {
+    "eff_stack_max": 16,
+    "eff_stack_min": 15,
+    "folded": "TRUE",
+    "percentage": 69.5,
+    "players_behind": 1
+  },
+  {
+    "eff_stack_max": 16,
+    "eff_stack_min": 15,
+    "folded": "TRUE",
+    "percentage": 31,
+    "players_behind": 2
+  },
+  {
+    "eff_stack_max": 16,
+    "eff_stack_min": 15,
+    "folded": "TRUE",
+    "percentage": 27.5,
+    "players_behind": 3
+  },
+  {
+    "eff_stack_max": 16,
+    "eff_stack_min": 15,
+    "folded": "TRUE",
+    "percentage": 25,
+    "players_behind": 4
+  },
+  {
+    "eff_stack_max": 16,
+    "eff_stack_min": 15,
+    "folded": "FALSE",
+    "percentage": 25,
+    "players_behind": 0
+  },
+  {
+    "eff_stack_max": 16,
+    "eff_stack_min": 15,
+    "folded": "FALSE",
+    "percentage": 25,
+    "players_behind": 1
+  },
+  {
+    "eff_stack_max": 16,
+    "eff_stack_min": 15,
+    "folded": "FALSE",
+    "percentage": 18,
+    "players_behind": 2
+  },
+  {
+    "eff_stack_max": 16,
+    "eff_stack_min": 15,
+    "folded": "FALSE",
+    "percentage": 18,
+    "players_behind": 3
+  },
+  {
+    "eff_stack_max": 14,
+    "eff_stack_min": 13,
+    "folded": "TRUE",
+    "percentage": 69.5,
+    "players_behind": 1
+  },
+  {
+    "eff_stack_max": 14,
+    "eff_stack_min": 13,
+    "folded": "TRUE",
+    "percentage": 31,
+    "players_behind": 2
+  },
+  {
+    "eff_stack_max": 14,
+    "eff_stack_min": 13,
+    "folded": "TRUE",
+    "percentage": 27.5,
+    "players_behind": 3
+  },
+  {
+    "eff_stack_max": 14,
+    "eff_stack_min": 13,
+    "folded": "TRUE",
+    "percentage": 25,
+    "players_behind": 4
+  },
+  {
+    "eff_stack_max": 14,
+    "eff_stack_min": 13,
+    "folded": "FALSE",
+    "percentage": 25,
+    "players_behind": 0
+  },
+  {
+    "eff_stack_max": 14,
+    "eff_stack_min": 13,
+    "folded": "FALSE",
+    "percentage": 25,
+    "players_behind": 1
+  },
+  {
+    "eff_stack_max": 14,
+    "eff_stack_min": 13,
+    "folded": "FALSE",
+    "percentage": 18,
+    "players_behind": 2
+  },
+  {
+    "eff_stack_max": 14,
+    "eff_stack_min": 13,
+    "folded": "FALSE",
+    "percentage": 18,
+    "players_behind": 3
+  },
+  {
+    "eff_stack_max": 12,
+    "eff_stack_min": 11,
+    "folded": "TRUE",
+    "percentage": 69.5,
+    "players_behind": 1
+  },
+  {
+    "eff_stack_max": 12,
+    "eff_stack_min": 11,
+    "folded": "TRUE",
+    "percentage": 31,
+    "players_behind": 2
+  },
+  {
+    "eff_stack_max": 12,
+    "eff_stack_min": 11,
+    "folded": "TRUE",
+    "percentage": 27.5,
+    "players_behind": 3
+  },
+  {
+    "eff_stack_max": 12,
+    "eff_stack_min": 11,
+    "folded": "TRUE",
+    "percentage": 25,
+    "players_behind": 4
+  },
+  {
+    "eff_stack_max": 12,
+    "eff_stack_min": 11,
+    "folded": "FALSE",
+    "percentage": 25,
+    "players_behind": 0
+  },
+  {
+    "eff_stack_max": 12,
+    "eff_stack_min": 11,
+    "folded": "FALSE",
+    "percentage": 25,
+    "players_behind": 1
+  },
+  {
+    "eff_stack_max": 12,
+    "eff_stack_min": 11,
+    "folded": "FALSE",
+    "percentage": 18,
+    "players_behind": 2
+  },
+  {
+    "eff_stack_max": 12,
+    "eff_stack_min": 11,
+    "folded": "FALSE",
+    "percentage": 18,
+    "players_behind": 3
+  }
+]

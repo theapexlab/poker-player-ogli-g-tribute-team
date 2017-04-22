@@ -9,6 +9,8 @@ const gameStateFixture5 = require('./test/game-state-5.json')
 const cards2Table = require('./cards-2-table')
 const myStack = require('./my-stack')
 const effectiveStack = require('./effective-stack')
+const strategyTable = require('./strategy-table')
+const strategyTableFixture = require('./test/strategy-table.json')
 
 // test.skip('correct card value',
 //   function (t) {
@@ -106,6 +108,19 @@ test('eff stack 1', (t) => {
 test('eff stack 2', (t) => {
   const resp = effectiveStack.calculate(gameStateFixture4)
   t.equal(resp, 2132 / 3 / 20)
+  t.end()
+})
+
+test('strategy table 1', (t) => {
+
+  const gameData = {
+    effStack: 100,
+    playersBehind: 2,
+    folded: 'TRUE'
+  }
+
+  const resp = strategyTable.query(gameData, strategyTableFixture)
+  t.equal(resp, 13)
   t.end()
 })
 
