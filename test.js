@@ -19,7 +19,7 @@ const effectiveStack = require('./effective-stack')
 
 test('should work1', function (t) {
   Player.betRequest(gameStateFixture, function (bet) {
-    console.log(bet)
+    // console.log(bet)
     t.equals(bet, 0)
     t.end()
   })
@@ -50,12 +50,21 @@ test('should work4', function (t) {
 
 test('should work5', function (t) {
   Player.betRequest(gameStateFixture5, function (bet) {
-    t.equals(bet, 10000)
+    t.equals(bet, 0)
     t.end()
   })
 })
 
-test('should work4', function (t) {
+test('should work6', function (t) {
+  const myGameState = JSON.parse(JSON.stringify(gameStateFixture5))
+  myGameState.players[myGameState.in_action].stack = 20
+  Player.betRequest(myGameState, function (bet) {
+    t.equals(bet, 20)
+    t.end()
+  })
+})
+
+test('should work7', function (t) {
   const myGameState = JSON.parse(JSON.stringify(gameStateFixture3))
   myGameState.pot = 150
   Player.betRequest(myGameState, function (bet) {
@@ -102,19 +111,20 @@ test('cards 2 table percentage should work', (t) => {
 test('my stack', (t) => {
   const resp = myStack.calculate(gameStateFixture)
   t.equal(resp, 79.5)
-  console.log(resp)
+  // console.log(resp)
   t.end()
 })
 
 test('eff stack 1', (t) => {
   const resp = effectiveStack.calculate(gameStateFixture)
-  t.equal(resp, 1010 / 20)
+  // console.log(resp)
+  t.equal(resp, (1010 + 320) / 20)
   t.end()
 })
 
 test('eff stack 2', (t) => {
   const resp = effectiveStack.calculate(gameStateFixture4)
-  t.equal(resp, 2132 / 3 / 20)
+  t.equal(resp, 43.5)
   t.end()
 })
 
