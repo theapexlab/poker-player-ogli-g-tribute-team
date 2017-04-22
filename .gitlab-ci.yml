@@ -1,0 +1,4 @@
+production:
+  type: deploy
+  script:
+  - set -e; curl -fs -XPOST -d "{\"after\":\"$CI_BUILD_REF\",\"ref\":\"refs/heads/$CI_BUILD_REF_NAME\",\"gitlab\":true}" http://live.leanpoker.org:80/api/tournament/58e67af2925f9e0004000002/team/poker-player-ogli-g-tribute-team/deploy?secret=$SECRET
