@@ -105,7 +105,7 @@ class Player {
           if (percentage < 50) betValue = myPlayer.stack
         } else if (effectiveStack > 15 && effectiveStack <= 25) {
           if (percentage < 26) betValue = myPlayer.stack
-        } else {
+        } else if (effectiveStack > 25 && effectiveStack <= 50) {
           if (percentage < 18) betValue = myPlayer.stack
           else if (percentage < 3.1) betValue = myPlayer.stack
         }
@@ -121,7 +121,7 @@ class Player {
           if (percentage < 29) betValue = myPlayer.stack
         } else if (effectiveStack > 15 && effectiveStack <= 25) {
           if (percentage < 22) betValue = myPlayer.stack
-        } else {
+        } else if (effectiveStack > 25 && effectiveStack <= 50) {
           if (percentage < 13) betValue = myPlayer.stack
           else if (percentage < 3.1) betValue = myPlayer.stack
         }
