@@ -49,6 +49,7 @@ class Player {
     const percentage = cards2Table.getPercentage(cards)
 
     // const folded = isFolded(gameState)
+    const raised = isRaised(gameState)
 
     // if (percentage < 18) {
     //   bet(myPlayer.stack)
@@ -56,10 +57,10 @@ class Player {
     //   bet(0)
     // }
 
-    if (!isRaised() && percentage < 18) {
+    if (!raised && percentage < 18) {
       console.log(cards, isRaised)
       bet(myPlayer.stack)
-    } else if (isRaised() && percentage < 6) {
+    } else if (raised && percentage < 6) {
       console.log(cards, isRaised)
       bet(myPlayer.stack)
     } else {

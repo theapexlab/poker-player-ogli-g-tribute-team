@@ -54,7 +54,7 @@ test('cards 2 table percentage should work', (t) => {
   t.end()
 })
 
-test.only('my stack', (t) => {
+test('my stack', (t) => {
   const resp = myStack.calculate(gameStateFixture)
   t.equal(resp, 79.5)
   console.log(resp)
