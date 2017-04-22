@@ -6,9 +6,11 @@ const gameStateFixture2 = require('./test/game-state-2.json')
 const gameStateFixture3 = require('./test/game-state-3.json')
 const gameStateFixture4 = require('./test/game-state-4.json')
 const gameStateFixture5 = require('./test/game-state-5.json')
+const gameStateFixture6 = require('./test/game-state-6.json')
 const cards2Table = require('./cards-2-table')
 const myStack = require('./my-stack')
 const effectiveStack = require('./effective-stack')
+const headsUp = require('./heads-up')
 
 // test.skip('correct card value',
 //   function (t) {
@@ -73,6 +75,15 @@ test('should work7', function (t) {
   })
 })
 
+test('should work8', function (t) {
+  const myGameState = JSON.parse(JSON.stringify(gameStateFixture6))
+  // myGameState.pot = 150
+  Player.betRequest(myGameState, function (bet) {
+    t.equals(bet, 900)
+    t.end()
+  })
+})
+
 test('cards 2 table convert should work', (t) => {
   let cards = [{rank: '4', suit: 'spades'}, {rank: '5', suit: 'spades'}]
   t.equal(cards2Table.convert(cards), '54s')
@@ -125,6 +136,18 @@ test('eff stack 1', (t) => {
 test('eff stack 2', (t) => {
   const resp = effectiveStack.calculate(gameStateFixture4)
   t.equal(resp, 43.5)
+  t.end()
+})
+
+test('heads up should be false', (t) => {
+  const isHeadsUp = headsUp.calculate(gameStateFixture4)
+  t.equal(isHeadsUp, false)
+  t.end()
+})
+
+test('heads up should be true', (t) => {
+  const isHeadsUp = headsUp.calculate(gameStateFixture)
+  t.equal(isHeadsUp, true)
   t.end()
 })
 

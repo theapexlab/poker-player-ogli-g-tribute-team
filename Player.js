@@ -5,8 +5,9 @@
 // })
 const _ = require('underscore')
 const cards2Table = require('./cards-2-table')
-const MyStack = require('./my-stack')
+// const MyStack = require('./my-stack')
 const EffectiveStack = require('./effective-stack')
+const HeadsUp = require('./heads-up')
 // const EffectiveStack = require('./effective-stack')
 
 // function toNum (c) {
@@ -59,6 +60,7 @@ class Player {
 
     // const folded = isFolded(gameState)
     const raised = isRaised(gameState)
+    const isHeadsUp = HeadsUp.calculate(gameState)
     // const myStack = MyStack.calculate(gameState)
     const effectiveStack = EffectiveStack.calculate(gameState)
 
@@ -69,6 +71,7 @@ class Player {
     // }
 
     let betValue = 0
+    // If not heads up
     if (effectiveStack <= 3) {
       if (!raised && percentage < 81) betValue = myPlayer.stack
       else if (percentage < 48) betValue = myPlayer.stack
@@ -86,10 +89,31 @@ class Player {
       else if (percentage < 3.1) betValue = myPlayer.stack
     }
 
+    // If headsup
+    if (isHeadsUp) {
+      if (gameState.pot <= gameState.small_blind * 4) {
+        if (effectiveStack <= 3) {
+          betValue = myPlayer.stack
+        } else if (effectiveStack > 3 && effectiveStack <= 6) {
+          if (percentage < 78.7) betValue = myPlayer.stack
+        } else if (effectiveStack > 6 && effectiveStack <= 10) {
+          if (percentage < 61) betValue = myPlayer.stack
+        } else if (effectiveStack > 10 && effectiveStack <= 15) {
+          if (percentage < 50) betValue = myPlayer.stack
+        } else if (effectiveStack > 15 && effectiveStack <= 25) {
+          if (percentage < 26) betValue = myPlayer.stack
+        } else {
+          if (percentage < 18) betValue = myPlayer.stack
+          else if (percentage < 3.1) betValue = myPlayer.stack
+        }
+      }
+    }
+
     if (betValue) debugLog(cards, raised, percentage, effectiveStack)
     bet(betValue)
+    // console.log(114, cards, raised, percentage, effectiveStack, isHeadsUp)
 
-    if (isNaN(effectiveStack)) console.log('nan detected', gameState)
+    // if (isNaN(effectiveStack)) console.log('nan detected', gameState)
     if (effectiveStack === 0) console.log('zero detected', gameState)
 
     // if (!raised && percentage < 18) {
