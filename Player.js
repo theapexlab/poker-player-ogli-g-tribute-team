@@ -42,8 +42,9 @@ function isRaised (gameState) {
   return gameState.pot > (gameState.small_blind * 5)
 }
 
-function debugLog (cards, raised, percentage, myStack, isHeadsUp) {
-  const wasHeadsUp = isHeadsUp ? 'was heads up push' : ''
+function debugLog (cards, raised, percentage, myStack, isHeadsUp, headsUpCall) {
+  let wasHeadsUp = isHeadsUp ? 'heads up PUSH' : ''
+  if (headsUpCall) wasHeadsUp = 'heads up CALL'
   console.log(cards2Table.convert(cards), percentage, myStack, 'bb', raised, wasHeadsUp)
 }
 
@@ -91,6 +92,7 @@ class Player {
     }
 
     // If headsup
+    let headsUpCall = false
     if (isHeadsUp) {
       if (gameState.pot <= gameState.small_blind * 4) {
         if (effectiveStack <= 3) {
@@ -107,11 +109,27 @@ class Player {
           if (percentage < 18) betValue = myPlayer.stack
           else if (percentage < 3.1) betValue = myPlayer.stack
         }
+      } else {
+        headsUpCall = true
+        if (effectiveStack <= 3) {
+          if (percentage < 77) betValue = myPlayer.stack
+        } else if (effectiveStack > 3 && effectiveStack <= 6) {
+          if (percentage < 49) betValue = myPlayer.stack
+        } else if (effectiveStack > 6 && effectiveStack <= 10) {
+          if (percentage < 42) betValue = myPlayer.stack
+        } else if (effectiveStack > 10 && effectiveStack <= 15) {
+          if (percentage < 29) betValue = myPlayer.stack
+        } else if (effectiveStack > 15 && effectiveStack <= 25) {
+          if (percentage < 22) betValue = myPlayer.stack
+        } else {
+          if (percentage < 13) betValue = myPlayer.stack
+          else if (percentage < 3.1) betValue = myPlayer.stack
+        }
       }
     }
 
     bet(betValue)
-    if (betValue) debugLog(cards, raised, percentage, effectiveStack, isHeadsUp)
+    if (betValue) debugLog(cards, raised, percentage, effectiveStack, isHeadsUp, headsUpCall)
     // console.log(114, cards, raised, percentage, effectiveStack, isHeadsUp)
 
     // if (isNaN(effectiveStack)) console.log('nan detected', gameState)
