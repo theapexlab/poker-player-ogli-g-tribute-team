@@ -42,8 +42,9 @@ function isRaised (gameState) {
   return gameState.pot > (gameState.small_blind * 5)
 }
 
-function debugLog (cards, raised, percentage, myStack) {
-  console.log(cards2Table.convert(cards), percentage, myStack, 'bb', raised)
+function debugLog (cards, raised, percentage, myStack, isHeadsUp) {
+  const wasHeadsUp = isHeadsUp ? 'was heads up push' : ''
+  console.log(cards2Table.convert(cards), percentage, myStack, 'bb', raised, wasHeadsUp)
 }
 
 class Player {
@@ -109,8 +110,8 @@ class Player {
       }
     }
 
-    if (betValue) debugLog(cards, raised, percentage, effectiveStack)
     bet(betValue)
+    if (betValue) debugLog(cards, raised, percentage, effectiveStack, isHeadsUp)
     // console.log(114, cards, raised, percentage, effectiveStack, isHeadsUp)
 
     // if (isNaN(effectiveStack)) console.log('nan detected', gameState)
