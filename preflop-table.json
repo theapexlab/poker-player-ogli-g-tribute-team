@@ -1,847 +1,678 @@
 [
  {
-   "rank": 1,
    "cards": "AA",
-   "percentage": "0.59"
+   "percentage": 0.5
  },
  {
-   "rank": 2,
    "cards": "KK",
-   "percentage": "1.18"
+   "percentage": 0.9
  },
  {
-   "rank": 3,
-   "cards": "QQ",
-   "percentage": "1.78"
- },
- {
-   "rank": 4,
    "cards": "AKs",
-   "percentage": "2.37"
+   "percentage": 1.2
  },
  {
-   "rank": 5,
+   "cards": "QQ",
+   "percentage": 1.7
+ },
+ {
+   "cards": "AK",
+   "percentage": 2.6
+ },
+ {
    "cards": "JJ",
-   "percentage": "2.96"
+   "percentage": 3
  },
  {
-   "rank": 6,
    "cards": "AQs",
-   "percentage": "3.55"
+   "percentage": 3.3
  },
  {
-   "rank": 7,
-   "cards": "KQs",
-   "percentage": "4.14"
- },
- {
-   "rank": 8,
-   "cards": "AJs",
-   "percentage": "4.73"
- },
- {
-   "rank": 9,
-   "cards": "KJs",
-   "percentage": "5.33"
- },
- {
-   "rank": 10,
    "cards": "TT",
-   "percentage": "5.92"
+   "percentage": 3.8
  },
  {
-   "rank": 11,
-   "cards": "AKo",
-   "percentage": "6.51"
- },
- {
-   "rank": 12,
-   "cards": "ATs",
-   "percentage": "7.10"
- },
- {
-   "rank": 13,
-   "cards": "QJs",
-   "percentage": "7.69"
- },
- {
-   "rank": 14,
-   "cards": "KTs",
-   "percentage": "8.28"
- },
- {
-   "rank": 15,
-   "cards": "QTs",
-   "percentage": "8.88"
- },
- {
-   "rank": 16,
-   "cards": "JTs",
-   "percentage": "9.47"
- },
- {
-   "rank": 17,
-   "cards": "99",
-   "percentage": "10.06"
- },
- {
-   "rank": 18,
    "cards": "AQo",
-   "percentage": "10.65"
+   "percentage": 4.7
  },
  {
-   "rank": 19,
-   "cards": "A9s",
-   "percentage": "11.24"
+   "cards": "99",
+   "percentage": 5.1
  },
  {
-   "rank": 20,
-   "cards": "KQo",
-   "percentage": "11.83"
+   "cards": "AJs",
+   "percentage": 5.4
  },
  {
-   "rank": 21,
    "cards": "88",
-   "percentage": "12.43"
+   "percentage": 5.9
  },
  {
-   "rank": 22,
-   "cards": "K9s",
-   "percentage": "13.02"
+   "cards": "ATs",
+   "percentage": 6.2
  },
  {
-   "rank": 23,
-   "cards": "T9s",
-   "percentage": "13.61"
- },
- {
-   "rank": 24,
-   "cards": "A8s",
-   "percentage": "14.20"
- },
- {
-   "rank": 25,
-   "cards": "Q9s",
-   "percentage": "14.79"
- },
- {
-   "rank": 26,
-   "cards": "J9s",
-   "percentage": "15.38"
- },
- {
-   "rank": 27,
    "cards": "AJo",
-   "percentage": "15.98"
+   "percentage": 7.1
  },
  {
-   "rank": 28,
-   "cards": "A5s",
-   "percentage": "16.57"
- },
- {
-   "rank": 29,
    "cards": "77",
-   "percentage": "17.16"
+   "percentage": 7.5
  },
  {
-   "rank": 30,
-   "cards": "A7s",
-   "percentage": "17.75"
- },
- {
-   "rank": 31,
-   "cards": "KJo",
-   "percentage": "18.34"
- },
- {
-   "rank": 32,
-   "cards": "A4s",
-   "percentage": "18.93"
- },
- {
-   "rank": 33,
-   "cards": "A3s",
-   "percentage": "19.53"
- },
- {
-   "rank": 34,
-   "cards": "A6s",
-   "percentage": "20.12"
- },
- {
-   "rank": 35,
-   "cards": "QJo",
-   "percentage": "20.71"
- },
- {
-   "rank": 36,
    "cards": "66",
-   "percentage": "21.30"
+   "percentage": 8
  },
  {
-   "rank": 37,
-   "cards": "K8s",
-   "percentage": "21.89"
- },
- {
-   "rank": 38,
-   "cards": "T8s",
-   "percentage": "22.49"
- },
- {
-   "rank": 39,
-   "cards": "A2s",
-   "percentage": "23.08"
- },
- {
-   "rank": 40,
-   "cards": "98s",
-   "percentage": "23.67"
- },
- {
-   "rank": 41,
-   "cards": "J8s",
-   "percentage": "24.26"
- },
- {
-   "rank": 42,
    "cards": "ATo",
-   "percentage": "24.85"
+   "percentage": 8.9
  },
  {
-   "rank": 43,
-   "cards": "Q8s",
-   "percentage": "25.44"
+   "cards": "A9s",
+   "percentage": 9.2
  },
  {
-   "rank": 44,
-   "cards": "K7s",
-   "percentage": "26.04"
- },
- {
-   "rank": 45,
-   "cards": "KTo",
-   "percentage": "26.63"
- },
- {
-   "rank": 46,
    "cards": "55",
-   "percentage": "27.22"
+   "percentage": 9.7
  },
  {
-   "rank": 47,
-   "cards": "JTo",
-   "percentage": "27.81"
+   "cards": "A8s",
+   "percentage": 10
  },
  {
-   "rank": 48,
-   "cards": "87s",
-   "percentage": "28.40"
+   "cards": "KQs",
+   "percentage": 10.3
  },
  {
-   "rank": 49,
-   "cards": "QTo",
-   "percentage": "28.99"
- },
- {
-   "rank": 50,
    "cards": "44",
-   "percentage": "29.59"
+   "percentage": 10.7
  },
  {
-   "rank": 51,
-   "cards": "22",
-   "percentage": "30.18"
- },
- {
-   "rank": 52,
-   "cards": "33",
-   "percentage": "30.77"
- },
- {
-   "rank": 53,
-   "cards": "K6s",
-   "percentage": "31.36"
- },
- {
-   "rank": 54,
-   "cards": "97s",
-   "percentage": "31.95"
- },
- {
-   "rank": 55,
-   "cards": "K5s",
-   "percentage": "32.54"
- },
- {
-   "rank": 56,
-   "cards": "76s",
-   "percentage": "33.14"
- },
- {
-   "rank": 57,
-   "cards": "T7s",
-   "percentage": "33.73"
- },
- {
-   "rank": 58,
-   "cards": "K4s",
-   "percentage": "34.32"
- },
- {
-   "rank": 59,
-   "cards": "K2s",
-   "percentage": "34.91"
- },
- {
-   "rank": 60,
-   "cards": "K3s",
-   "percentage": "35.50"
- },
- {
-   "rank": 61,
-   "cards": "Q7s",
-   "percentage": "36.09"
- },
- {
-   "rank": 62,
-   "cards": "86s",
-   "percentage": "36.69"
- },
- {
-   "rank": 63,
-   "cards": "65s",
-   "percentage": "37.28"
- },
- {
-   "rank": 64,
-   "cards": "J7s",
-   "percentage": "37.87"
- },
- {
-   "rank": 65,
-   "cards": "54s",
-   "percentage": "38.46"
- },
- {
-   "rank": 66,
-   "cards": "Q6s",
-   "percentage": "39.05"
- },
- {
-   "rank": 67,
-   "cards": "75s",
-   "percentage": "39.64"
- },
- {
-   "rank": 68,
-   "cards": "96s",
-   "percentage": "40.24"
- },
- {
-   "rank": 69,
-   "cards": "Q5s",
-   "percentage": "40.83"
- },
- {
-   "rank": 70,
-   "cards": "64s",
-   "percentage": "41.42"
- },
- {
-   "rank": 71,
-   "cards": "Q4s",
-   "percentage": "42.01"
- },
- {
-   "rank": 72,
-   "cards": "Q3s",
-   "percentage": "42.60"
- },
- {
-   "rank": 73,
-   "cards": "T9o",
-   "percentage": "43.20"
- },
- {
-   "rank": 74,
-   "cards": "T6s",
-   "percentage": "43.79"
- },
- {
-   "rank": 75,
-   "cards": "Q2s",
-   "percentage": "44.38"
- },
- {
-   "rank": 76,
    "cards": "A9o",
-   "percentage": "44.97"
+   "percentage": 11.6
  },
  {
-   "rank": 77,
-   "cards": "53s",
-   "percentage": "45.56"
+   "cards": "A7s",
+   "percentage": 11.9
  },
  {
-   "rank": 78,
-   "cards": "85s",
-   "percentage": "46.15"
+   "cards": "KJs",
+   "percentage": 12.2
  },
  {
-   "rank": 79,
-   "cards": "J6s",
-   "percentage": "46.75"
+   "cards": "A5s",
+   "percentage": 12.5
  },
  {
-   "rank": 80,
-   "cards": "J9o",
-   "percentage": "47.34"
- },
- {
-   "rank": 81,
-   "cards": "K9o",
-   "percentage": "47.93"
- },
- {
-   "rank": 82,
-   "cards": "J5s",
-   "percentage": "48.52"
- },
- {
-   "rank": 83,
-   "cards": "Q9o",
-   "percentage": "49.11"
- },
- {
-   "rank": 84,
-   "cards": "43s",
-   "percentage": "49.70"
- },
- {
-   "rank": 85,
-   "cards": "74s",
-   "percentage": "50.30"
- },
- {
-   "rank": 86,
-   "cards": "J4s",
-   "percentage": "50.89"
- },
- {
-   "rank": 87,
-   "cards": "J3s",
-   "percentage": "51.48"
- },
- {
-   "rank": 88,
-   "cards": "95s",
-   "percentage": "52.07"
- },
- {
-   "rank": 89,
-   "cards": "J2s",
-   "percentage": "52.66"
- },
- {
-   "rank": 90,
-   "cards": "63s",
-   "percentage": "53.25"
- },
- {
-   "rank": 91,
    "cards": "A8o",
-   "percentage": "53.85"
+   "percentage": 13.4
  },
  {
-   "rank": 92,
-   "cards": "52s",
-   "percentage": "54.44"
+   "cards": "A6s",
+   "percentage": 13.7
  },
  {
-   "rank": 93,
-   "cards": "T5s",
-   "percentage": "55.03"
+   "cards": "A4s",
+   "percentage": 14
  },
  {
-   "rank": 94,
-   "cards": "84s",
-   "percentage": "55.62"
+   "cards": "33",
+   "percentage": 14.5
  },
  {
-   "rank": 95,
-   "cards": "T4s",
-   "percentage": "56.21"
+   "cards": "KTs",
+   "percentage": 14.8
  },
  {
-   "rank": 96,
-   "cards": "T3s",
-   "percentage": "56.80"
- },
- {
-   "rank": 97,
-   "cards": "42s",
-   "percentage": "57.40"
- },
- {
-   "rank": 98,
-   "cards": "T2s",
-   "percentage": "57.99"
- },
- {
-   "rank": 99,
-   "cards": "98o",
-   "percentage": "58.58"
- },
- {
-   "rank": 100,
-   "cards": "T8o",
-   "percentage": "59.17"
- },
- {
-   "rank": 101,
-   "cards": "A5o",
-   "percentage": "59.76"
- },
- {
-   "rank": 102,
    "cards": "A7o",
-   "percentage": "60.36"
+   "percentage": 15.7
  },
  {
-   "rank": 103,
-   "cards": "73s",
-   "percentage": "60.95"
+   "cards": "A3s",
+   "percentage": 16
  },
  {
-   "rank": 104,
-   "cards": "A4o",
-   "percentage": "61.54"
+   "cards": "KQo",
+   "percentage": 16.9
  },
  {
-   "rank": 105,
-   "cards": "32s",
-   "percentage": "62.13"
+   "cards": "A2s",
+   "percentage": 17.2
  },
  {
-   "rank": 106,
-   "cards": "94s",
-   "percentage": "62.72"
+   "cards": "A5o",
+   "percentage": 18.1
  },
  {
-   "rank": 107,
-   "cards": "93s",
-   "percentage": "63.31"
- },
- {
-   "rank": 108,
-   "cards": "J8o",
-   "percentage": "63.91"
- },
- {
-   "rank": 109,
-   "cards": "A3o",
-   "percentage": "64.50"
- },
- {
-   "rank": 110,
-   "cards": "62s",
-   "percentage": "65.09"
- },
- {
-   "rank": 111,
-   "cards": "92s",
-   "percentage": "65.68"
- },
- {
-   "rank": 112,
-   "cards": "K8o",
-   "percentage": "66.27"
- },
- {
-   "rank": 113,
    "cards": "A6o",
-   "percentage": "66.86"
+   "percentage": 19
  },
  {
-   "rank": 114,
-   "cards": "87o",
-   "percentage": "67.46"
+   "cards": "A4o",
+   "percentage": 19.9
  },
  {
-   "rank": 115,
-   "cards": "Q8o",
-   "percentage": "68.05"
+   "cards": "KJo",
+   "percentage": 20.8
  },
  {
-   "rank": 116,
-   "cards": "83s",
-   "percentage": "68.64"
+   "cards": "QJs",
+   "percentage": 21.1
  },
  {
-   "rank": 117,
+   "cards": "A3o",
+   "percentage": 22
+ },
+ {
+   "cards": "22",
+   "percentage": 22.5
+ },
+ {
+   "cards": "K9s",
+   "percentage": 22.8
+ },
+ {
    "cards": "A2o",
-   "percentage": "69.23"
+   "percentage": 23.7
  },
  {
-   "rank": 118,
-   "cards": "82s",
-   "percentage": "69.82"
+   "cards": "KTo",
+   "percentage": 24.6
  },
  {
-   "rank": 119,
-   "cards": "97o",
-   "percentage": "70.41"
+   "cards": "QTs",
+   "percentage": 24.9
  },
  {
-   "rank": 120,
-   "cards": "72s",
-   "percentage": "71.01"
+   "cards": "K8s",
+   "percentage": 25.2
  },
  {
-   "rank": 121,
-   "cards": "76o",
-   "percentage": "71.60"
+   "cards": "K7s",
+   "percentage": 25.5
  },
  {
-   "rank": 122,
+   "cards": "JTs",
+   "percentage": 25.8
+ },
+ {
+   "cards": "K9o",
+   "percentage": 26.7
+ },
+ {
+   "cards": "K6s",
+   "percentage": 27
+ },
+ {
+   "cards": "QJo",
+   "percentage": 27.9
+ },
+ {
+   "cards": "Q9s",
+   "percentage": 28.2
+ },
+ {
+   "cards": "K5s",
+   "percentage": 28.5
+ },
+ {
+   "cards": "K8o",
+   "percentage": 29.4
+ },
+ {
+   "cards": "K4s",
+   "percentage": 29.7
+ },
+ {
+   "cards": "QTo",
+   "percentage": 30.6
+ },
+ {
    "cards": "K7o",
-   "percentage": "72.19"
+   "percentage": 31.5
  },
  {
-   "rank": 123,
-   "cards": "65o",
-   "percentage": "72.78"
+   "cards": "K3s",
+   "percentage": 31.8
  },
  {
-   "rank": 124,
-   "cards": "T7o",
-   "percentage": "73.37"
+   "cards": "K2s",
+   "percentage": 32.1
  },
  {
-   "rank": 125,
+   "cards": "Q8s",
+   "percentage": 32.4
+ },
+ {
    "cards": "K6o",
-   "percentage": "73.96"
+   "percentage": 33.3
  },
  {
-   "rank": 126,
-   "cards": "86o",
-   "percentage": "74.56"
+   "cards": "J9s",
+   "percentage": 33.6
  },
  {
-   "rank": 127,
-   "cards": "54o",
-   "percentage": "75.15"
- },
- {
-   "rank": 128,
    "cards": "K5o",
-   "percentage": "75.74"
+   "percentage": 34.5
  },
  {
-   "rank": 129,
-   "cards": "J7o",
-   "percentage": "76.33"
+   "cards": "Q9o",
+   "percentage": 35.4
  },
  {
-   "rank": 130,
-   "cards": "75o",
-   "percentage": "76.92"
+   "cards": "JTo",
+   "percentage": 36.3
  },
  {
-   "rank": 131,
-   "cards": "Q7o",
-   "percentage": "77.51"
- },
- {
-   "rank": 132,
    "cards": "K4o",
-   "percentage": "78.11"
+   "percentage": 37.3
  },
  {
-   "rank": 133,
+   "cards": "Q7s",
+   "percentage": 37.6
+ },
+ {
+   "cards": "T9s",
+   "percentage": 37.9
+ },
+ {
+   "cards": "Q6s",
+   "percentage": 38.2
+ },
+ {
    "cards": "K3o",
-   "percentage": "78.70"
+   "percentage": 39.1
  },
  {
-   "rank": 134,
-   "cards": "96o",
-   "percentage": "79.29"
+   "cards": "J8s",
+   "percentage": 39.4
  },
  {
-   "rank": 135,
+   "cards": "Q5s",
+   "percentage": 39.7
+ },
+ {
    "cards": "K2o",
-   "percentage": "79.88"
+   "percentage": 40.6
  },
  {
-   "rank": 136,
-   "cards": "64o",
-   "percentage": "80.47"
+   "cards": "Q8o",
+   "percentage": 41.5
  },
  {
-   "rank": 137,
+   "cards": "Q4s",
+   "percentage": 41.8
+ },
+ {
+   "cards": "J9o",
+   "percentage": 42.7
+ },
+ {
+   "cards": "Q3s",
+   "percentage": 43
+ },
+ {
+   "cards": "T8s",
+   "percentage": 43.3
+ },
+ {
+   "cards": "J7s",
+   "percentage": 43.6
+ },
+ {
+   "cards": "Q7o",
+   "percentage": 44.5
+ },
+ {
+   "cards": "Q2s",
+   "percentage": 44.8
+ },
+ {
    "cards": "Q6o",
-   "percentage": "81.07"
+   "percentage": 45.7
  },
  {
-   "rank": 138,
-   "cards": "53o",
-   "percentage": "81.66"
+   "cards": "98s",
+   "percentage": 46
  },
  {
-   "rank": 139,
-   "cards": "85o",
-   "percentage": "82.25"
- },
- {
-   "rank": 140,
-   "cards": "T6o",
-   "percentage": "82.84"
- },
- {
-   "rank": 141,
    "cards": "Q5o",
-   "percentage": "83.43"
+   "percentage": 46.9
  },
  {
-   "rank": 142,
-   "cards": "43o",
-   "percentage": "84.02"
+   "cards": "J8o",
+   "percentage": 47.8
  },
  {
-   "rank": 143,
+   "cards": "T9o",
+   "percentage": 48.7
+ },
+ {
+   "cards": "J6s",
+   "percentage": 49
+ },
+ {
+   "cards": "T7s",
+   "percentage": 49.3
+ },
+ {
+   "cards": "J5s",
+   "percentage": 49.6
+ },
+ {
    "cards": "Q4o",
-   "percentage": "84.62"
+   "percentage": 50.5
  },
  {
-   "rank": 144,
+   "cards": "J4s",
+   "percentage": 50.8
+ },
+ {
+   "cards": "J7o",
+   "percentage": 51.7
+ },
+ {
    "cards": "Q3o",
-   "percentage": "85.21"
+   "percentage": 52.6
  },
  {
-   "rank": 145,
-   "cards": "74o",
-   "percentage": "85.80"
+   "cards": "97s",
+   "percentage": 52.9
  },
  {
-   "rank": 146,
+   "cards": "T8o",
+   "percentage": 53.8
+ },
+ {
+   "cards": "J3s",
+   "percentage": 54.1
+ },
+ {
+   "cards": "T6s",
+   "percentage": 54.4
+ },
+ {
    "cards": "Q2o",
-   "percentage": "86.39"
+   "percentage": 55.4
  },
  {
-   "rank": 147,
+   "cards": "J2s",
+   "percentage": 55.7
+ },
+ {
+   "cards": "87s",
+   "percentage": 56
+ },
+ {
    "cards": "J6o",
-   "percentage": "86.98"
+   "percentage": 56.9
  },
  {
-   "rank": 148,
-   "cards": "63o",
-   "percentage": "87.57"
+   "cards": "98o",
+   "percentage": 57.8
  },
  {
-   "rank": 149,
+   "cards": "T7o",
+   "percentage": 58.7
+ },
+ {
+   "cards": "96s",
+   "percentage": 59
+ },
+ {
    "cards": "J5o",
-   "percentage": "88.17"
+   "percentage": 59.9
  },
  {
-   "rank": 150,
-   "cards": "95o",
-   "percentage": "88.76"
+   "cards": "T5s",
+   "percentage": 60.2
  },
  {
-   "rank": 151,
-   "cards": "52o",
-   "percentage": "89.35"
+   "cards": "T4s",
+   "percentage": 60.5
  },
  {
-   "rank": 152,
+   "cards": "86s",
+   "percentage": 60.8
+ },
+ {
    "cards": "J4o",
-   "percentage": "89.94"
+   "percentage": 61.7
  },
  {
-   "rank": 153,
+   "cards": "T6o",
+   "percentage": 62.6
+ },
+ {
+   "cards": "97o",
+   "percentage": 63.5
+ },
+ {
+   "cards": "T3s",
+   "percentage": 63.8
+ },
+ {
+   "cards": "76s",
+   "percentage": 64.1
+ },
+ {
+   "cards": "95s",
+   "percentage": 64.4
+ },
+ {
    "cards": "J3o",
-   "percentage": "90.53"
+   "percentage": 65.3
  },
  {
-   "rank": 154,
-   "cards": "42o",
-   "percentage": "91.12"
+   "cards": "T2s",
+   "percentage": 65.6
  },
  {
-   "rank": 155,
-   "cards": "J2o",
-   "percentage": "91.72"
+   "cards": "87o",
+   "percentage": 66.5
  },
  {
-   "rank": 156,
-   "cards": "84o",
-   "percentage": "92.31"
+   "cards": "85s",
+   "percentage": 66.8
  },
  {
-   "rank": 157,
+   "cards": "96o",
+   "percentage": 67.7
+ },
+ {
    "cards": "T5o",
-   "percentage": "92.90"
+   "percentage": 68.6
  },
  {
-   "rank": 158,
+   "cards": "J2o",
+   "percentage": 69.5
+ },
+ {
+   "cards": "75s",
+   "percentage": 69.8
+ },
+ {
+   "cards": "94s",
+   "percentage": 70.1
+ },
+ {
    "cards": "T4o",
-   "percentage": "93.49"
+   "percentage": 71
  },
  {
-   "rank": 159,
-   "cards": "32o",
-   "percentage": "94.08"
+   "cards": "65s",
+   "percentage": 71.3
  },
  {
-   "rank": 160,
+   "cards": "86o",
+   "percentage": 72.2
+ },
+ {
+   "cards": "93s",
+   "percentage": 72.5
+ },
+ {
+   "cards": "84s",
+   "percentage": 72.9
+ },
+ {
+   "cards": "95o",
+   "percentage": 73.8
+ },
+ {
    "cards": "T3o",
-   "percentage": "94.67"
+   "percentage": 74.7
  },
  {
-   "rank": 161,
-   "cards": "73o",
-   "percentage": "95.27"
+   "cards": "76o",
+   "percentage": 75.6
  },
  {
-   "rank": 162,
+   "cards": "92s",
+   "percentage": 75.9
+ },
+ {
+   "cards": "74s",
+   "percentage": 76.2
+ },
+ {
+   "cards": "54s",
+   "percentage": 76.5
+ },
+ {
    "cards": "T2o",
-   "percentage": "95.86"
+   "percentage": 77.4
  },
  {
-   "rank": 163,
-   "cards": "62o",
-   "percentage": "96.45"
+   "cards": "85o",
+   "percentage": 78.3
  },
  {
-   "rank": 164,
+   "cards": "64s",
+   "percentage": 78.6
+ },
+ {
+   "cards": "83s",
+   "percentage": 78.9
+ },
+ {
    "cards": "94o",
-   "percentage": "97.04"
+   "percentage": 79.8
  },
  {
-   "rank": 165,
+   "cards": "75o",
+   "percentage": 80.7
+ },
+ {
+   "cards": "82s",
+   "percentage": 81
+ },
+ {
+   "cards": "73s",
+   "percentage": 81.3
+ },
+ {
    "cards": "93o",
-   "percentage": "97.63"
+   "percentage": 82.2
  },
  {
-   "rank": 166,
+   "cards": "65o",
+   "percentage": 83.1
+ },
+ {
+   "cards": "53s",
+   "percentage": 83.4
+ },
+ {
+   "cards": "63s",
+   "percentage": 83.7
+ },
+ {
+   "cards": "84o",
+   "percentage": 84.6
+ },
+ {
    "cards": "92o",
-   "percentage": "98.22"
+   "percentage": 85.5
  },
  {
-   "rank": 167,
+   "cards": "43s",
+   "percentage": 85.8
+ },
+ {
+   "cards": "74o",
+   "percentage": 86.7
+ },
+ {
+   "cards": "72s",
+   "percentage": 87
+ },
+ {
+   "cards": "54o",
+   "percentage": 87.9
+ },
+ {
+   "cards": "64o",
+   "percentage": 88.8
+ },
+ {
+   "cards": "52s",
+   "percentage": 89.1
+ },
+ {
+   "cards": "62s",
+   "percentage": 89.4
+ },
+ {
    "cards": "83o",
-   "percentage": "98.82"
+   "percentage": 90.3
  },
  {
-   "rank": 168,
+   "cards": "42s",
+   "percentage": 90.6
+ },
+ {
    "cards": "82o",
-   "percentage": "99.41"
+   "percentage": 91.6
  },
  {
-   "rank": 169,
+   "cards": "73o",
+   "percentage": 92.5
+ },
+ {
+   "cards": "53o",
+   "percentage": 93.4
+ },
+ {
+   "cards": "63o",
+   "percentage": 94.3
+ },
+ {
+   "cards": "32s",
+   "percentage": 94.6
+ },
+ {
+   "cards": "43o",
+   "percentage": 95.5
+ },
+ {
    "cards": "72o",
-   "percentage": "100.00"
+   "percentage": 96.4
+ },
+ {
+   "cards": "52o",
+   "percentage": 97.3
+ },
+ {
+   "cards": "62o",
+   "percentage": 98.2
+ },
+ {
+   "cards": "42o",
+   "percentage": 99.1
+ },
+ {
+   "cards": "32o",
+   "percentage": 100
  }
 ]
