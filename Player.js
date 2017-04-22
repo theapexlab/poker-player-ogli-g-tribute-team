@@ -66,14 +66,14 @@ class Player {
 
     let betValue = 0
     if (myStack <= 3) {
-      if (!raised && percentage < 81) bet = myPlayer.stack
-      else if (percentage < 44) bet = myPlayer.stack
+      if (!raised && percentage < 81) betValue = myPlayer.stack
+      else if (percentage < 44) betValue = myPlayer.stack
     } else if (myStack > 3 && myStack <= 10) {
-      if (!raised && percentage < 46) bet = myPlayer.stack
-      else if (percentage < 22) bet = myPlayer.stack
+      if (!raised && percentage < 46) betValue = myPlayer.stack
+      else if (percentage < 22) betValue = myPlayer.stack
     } else {
-      if (!raised && percentage < 11) bet = myPlayer.stack
-      else if (percentage < 6) bet = myPlayer.stack
+      if (!raised && percentage < 11) betValue = myPlayer.stack
+      else if (percentage < 6) betValue = myPlayer.stack
     }
 
     if (betValue) debugLog(cards, raised, percentage, myStack)
