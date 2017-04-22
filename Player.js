@@ -2,7 +2,6 @@
 // var log = new Logger({
 //   token: 'fda2a63e-3dd4-4b70-9b73-097d51eb8d6d'
 // })
-
 const cards2Table = require('./cards-2-table')
 
 // function toNum (c) {
@@ -33,6 +32,10 @@ const cards2Table = require('./cards-2-table')
 //   return gameState.pot === (gameState.small_blind * 3)
 // }
 
+function isRaised (gameState) {
+  return gameState.pot > (gameState.small_blind * 5)
+}
+
 class Player {
   static get VERSION () {
     return '0.1'
@@ -47,19 +50,19 @@ class Player {
 
     // const folded = isFolded(gameState)
 
-    if (percentage < 18) {
-      bet(myPlayer.stack)
-    } else {
-      bet(0)
-    }
-
-    // if (folded && percentage < 0.28) {
-    //   bet(myPlayer.stack)
-    // } else if (!folded && cValue < 0.07) {
+    // if (percentage < 18) {
     //   bet(myPlayer.stack)
     // } else {
     //   bet(0)
     // }
+
+    if (!isRaised && percentage < 18) {
+      bet(myPlayer.stack)
+    } else if (isRaised && percentage < 6) {
+      bet(myPlayer.stack)
+    } else {
+      bet(0)
+    }
 
     // log.info(gameState)
     // log.info(`${JSON.stringify(myPlayer)} ${JSON.stringify(cards)} ${JSON.stringify(cValue)}`)
