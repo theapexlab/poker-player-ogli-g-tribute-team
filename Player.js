@@ -25,7 +25,6 @@ function getBigger (c1, c2) {
   return c1 > c2 ? c1 : c2
 }
 
-
 function cardsValue (cards) {
   return toNum(cards[0].rank) + toNum(cards[1].rank)
 }

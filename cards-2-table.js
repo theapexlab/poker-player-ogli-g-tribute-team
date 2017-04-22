@@ -57,5 +57,4 @@ module.exports = {
     const record = _.findWhere(preflopTable, {cards: cardStr})
     return Number(record.percentage)
   }
-
 }
