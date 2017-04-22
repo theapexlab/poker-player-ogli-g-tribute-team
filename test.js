@@ -57,6 +57,15 @@ test('should work5', function (t) {
   })
 })
 
+test('should work4', function (t) {
+  const myGameState = JSON.parse(JSON.stringify(gameStateFixture3))
+  myGameState.pot = 150
+  Player.betRequest(myGameState, function (bet) {
+    t.equals(bet, 10000)
+    t.end()
+  })
+})
+
 test('cards 2 table convert should work', (t) => {
   let cards = [{rank: '4', suit: 'spades'}, {rank: '5', suit: 'spades'}]
   t.equal(cards2Table.convert(cards), '54s')
