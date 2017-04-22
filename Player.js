@@ -5,33 +5,33 @@
 
 const cards2Table = require('./cards-2-table')
 
-function toNum (c) {
-  switch (c) {
-    case 'J':
-      return 6
-    case 'Q':
-      return 7
-    case 'K':
-      return 8
-    case 'A':
-      return 10
+// function toNum (c) {
+//   switch (c) {
+//     case 'J':
+//       return 6
+//     case 'Q':
+//       return 7
+//     case 'K':
+//       return 8
+//     case 'A':
+//       return 10
 
-    default:
-      return parseInt(c) / 2
-  }
-}
+//     default:
+//       return parseInt(c) / 2
+//   }
+// }
 
-function getBigger (c1, c2) {
-  return c1 > c2 ? c1 : c2
-}
+// function getBigger (c1, c2) {
+//   return c1 > c2 ? c1 : c2
+// }
 
-function cardsValue (cards) {
-  return toNum(cards[0].rank) + toNum(cards[1].rank)
-}
+// function cardsValue (cards) {
+//   return toNum(cards[0].rank) + toNum(cards[1].rank)
+// }
 
-function isFolded (gameState) {
-  return gameState.pot === (gameState.small_blind * 3)
-}
+// function isFolded (gameState) {
+//   return gameState.pot === (gameState.small_blind * 3)
+// }
 
 class Player {
   static get VERSION () {
@@ -41,19 +41,25 @@ class Player {
   static betRequest (gameState, bet) {
     const myPlayer = gameState.players[gameState.in_action]
     const cards = myPlayer.hole_cards
-    const cValue = cardsValue(cards)
+    // const cValue = cardsValue(cards)
 
     const percentage = cards2Table.getPercentage(cards)
 
-    const folded = isFolded(gameState)
+    // const folded = isFolded(gameState)
 
-    if (folded && percentage < 0.28) {
-      bet(myPlayer.stack)
-    } else if (!folded && cValue < 0.07) {
+    if (percentage < 0.18) {
       bet(myPlayer.stack)
     } else {
       bet(0)
     }
+
+    // if (folded && percentage < 0.28) {
+    //   bet(myPlayer.stack)
+    // } else if (!folded && cValue < 0.07) {
+    //   bet(myPlayer.stack)
+    // } else {
+    //   bet(0)
+    // }
 
     // log.info(gameState)
     // log.info(`${JSON.stringify(myPlayer)} ${JSON.stringify(cards)} ${JSON.stringify(cValue)}`)
