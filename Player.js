@@ -38,8 +38,8 @@ function isRaised (gameState) {
   return gameState.pot > (gameState.small_blind * 5)
 }
 
-function debugLog (cards, raised, myPlayer) {
-  console.log(cards2Table.convert(cards), raised, myPlayer)
+function debugLog (cards, raised, percentage, myStack) {
+  console.log(cards2Table.convert(cards), percentage, myStack, 'bb', raised)
 }
 
 class Player {
@@ -56,7 +56,7 @@ class Player {
 
     // const folded = isFolded(gameState)
     const raised = isRaised(gameState)
-    // const myStack = MyStack.calculate(gameState)
+    const myStack = MyStack.calculate(gameState)
 
     // if (percentage < 18) {
     //   bet(myPlayer.stack)
@@ -64,17 +64,32 @@ class Player {
     //   bet(0)
     // }
 
-    if (!raised && percentage < 18) {
-      bet(myPlayer.stack)
-      debugLog(cards, raised, myPlayer)
-      console.log()
-    } else if (raised && percentage < 6) {
-      bet(myPlayer.stack)
-      debugLog(cards, raised, myPlayer)
-      console.log()
+    let betValue = 0
+    if (myStack <= 3) {
+      if (!raised && percentage < 81) bet = myPlayer.stack
+      else if (percentage < 44) bet = myPlayer.stack
+    } else if (myStack > 3 && myStack <= 10) {
+      if (!raised && percentage < 46) bet = myPlayer.stack
+      else if (percentage < 22) bet = myPlayer.stack
     } else {
-      bet(0)
+      if (!raised && percentage < 11) bet = myPlayer.stack
+      else if (percentage < 6) bet = myPlayer.stack
     }
+
+    if (betValue) debugLog(cards, raised, percentage, myStack)
+    bet(betValue)
+
+    // if (!raised && percentage < 18) {
+    //   bet(myPlayer.stack)
+    //   debugLog(cards, raised, myPlayer)
+    //   console.log()
+    // } else if (raised && percentage < 6) {
+    //   bet(myPlayer.stack)
+    //   debugLog(cards, raised, myPlayer)
+    //   console.log()
+    // } else {
+    //   bet(0)
+    // }
 
     // log.info(gameState)
     // log.info(`${JSON.stringify(myPlayer)} ${JSON.stringify(cards)} ${JSON.stringify(cValue)}`)
