@@ -83,6 +83,9 @@ class Player {
     if (betValue) debugLog(cards, raised, percentage, effectiveStack)
     bet(betValue)
 
+    if (isNaN(effectiveStack)) console.log('nan detected', gameState)
+    if (effectiveStack === 0) console.log('zero detected', gameState)
+
     // if (!raised && percentage < 18) {
     //   bet(myPlayer.stack)
     //   debugLog(cards, raised, myPlayer)

@@ -14,6 +14,7 @@ const lib = {
 
     let otherPlayerAverageStack = otherPlayersSumStack / activePlayers
 
+    // console.log(myPlayerStack, otherPlayerAverageStack)
     if (myPlayerStack < otherPlayerAverageStack) {
       return myPlayerStack
     } else {
