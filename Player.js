@@ -47,7 +47,7 @@ class Player {
 
     // const folded = isFolded(gameState)
 
-    if (percentage < 0.18) {
+    if (percentage < 18) {
       bet(myPlayer.stack)
     } else {
       bet(0)

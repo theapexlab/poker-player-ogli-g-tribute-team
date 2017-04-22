@@ -2,6 +2,7 @@
 const test = require('tape')
 const Player = require('./Player')
 const gameStateFixture = require('./test/game-state.json')
+const cards2Table = require('./cards-2-table')
 
 // test.skip('correct card value',
 //   function (t) {
@@ -12,39 +13,42 @@ const gameStateFixture = require('./test/game-state.json')
 
 test('should work', function (t) {
   Player.betRequest(gameStateFixture, function (bet) {
-    console.log(bet)
+    t.equals
     t.end()
   })
 })
 
-// test('cards 2 table convert should work', (t) => {
-//   let cards = [{rank: '4', suit: 'spades'}, {rank: '5', suit: 'spades'}]
-//   t.equal(cards2Table.convert(cards), '54s')
+test('cards 2 table convert should work', (t) => {
+  let cards = [{rank: '4', suit: 'spades'}, {rank: '5', suit: 'spades'}]
+  t.equal(cards2Table.convert(cards), '54s')
 
-//   cards = [{rank: '4', suit: 'spades'}, {rank: '4', suit: 'spades'}]
-//   t.equal(cards2Table.convert(cards), '44')
+  cards = [{rank: '4', suit: 'spades'}, {rank: '4', suit: 'spades'}]
+  t.equal(cards2Table.convert(cards), '44')
 
-//   cards = [{rank: '4', suit: 'spades'}, {rank: '5', suit: 'hearts'}]
-//   t.equal(cards2Table.convert(cards), '54o')
+  cards = [{rank: '4', suit: 'spades'}, {rank: '5', suit: 'hearts'}]
+  t.equal(cards2Table.convert(cards), '54o')
 
-//   cards = [{rank: '10', suit: 'spades'}, {rank: '4', suit: 'hearts'}]
-//   t.equal(cards2Table.convert(cards), 'T4o')
+  cards = [{rank: '10', suit: 'spades'}, {rank: '4', suit: 'hearts'}]
+  t.equal(cards2Table.convert(cards), 'T4o')
 
-//   t.end()
-// })
+  t.end()
+})
 
-// test('cards 2 table percentage should work', (t) => {
-//   let cards = [{rank: 'A', suit: 'spades'}, {rank: 'A', suit: 'spades'}]
-//   t.equal(cards2Table.getPercentage(cards), 0.59)
+test('cards 2 table percentage should work', (t) => {
+  let cards = [{rank: 'A', suit: 'spades'}, {rank: 'A', suit: 'spades'}]
+  t.equal(cards2Table.getPercentage(cards), 0.59)
 
-//   cards = [{rank: 'J', suit: 'spades'}, {rank: 'K', suit: 'spades'}]
-//   t.equal(cards2Table.getPercentage(cards), 5.33)
+  cards = [{rank: 'J', suit: 'spades'}, {rank: 'K', suit: 'spades'}]
+  t.equal(cards2Table.getPercentage(cards), 5.33)
 
-//   cards = [{rank: 'A', suit: 'spades'}, {rank: 'Q', suit: 'cubes'}]
-//   t.equal(cards2Table.getPercentage(cards), 10.65)
+  cards = [{rank: 'A', suit: 'spades'}, {rank: 'Q', suit: 'clubs'}]
+  t.equal(cards2Table.getPercentage(cards), 10.65)
 
-//   t.end()
-// })
+  cards = [{rank: 'J', suit: 'spades'}, {rank: 'J', suit: 'clubs'}]
+  t.equal(cards2Table.getPercentage(cards), 2.96)
+
+  t.end()
+})
 
 // test('strategy table', (t) => {
 //   let query = {effStack: 50, playersBehind: 2, folded: true}
