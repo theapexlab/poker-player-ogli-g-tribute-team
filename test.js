@@ -36,16 +36,19 @@ test('cards 2 table convert should work', (t) => {
 
 test('cards 2 table percentage should work', (t) => {
   let cards = [{rank: 'A', suit: 'spades'}, {rank: 'A', suit: 'spades'}]
-  t.equal(cards2Table.getPercentage(cards), 0.59)
+  t.equal(cards2Table.getPercentage(cards), 0.5)
 
   cards = [{rank: 'J', suit: 'spades'}, {rank: 'K', suit: 'spades'}]
-  t.equal(cards2Table.getPercentage(cards), 5.33)
+  t.equal(cards2Table.getPercentage(cards), 12.2)
 
   cards = [{rank: 'A', suit: 'spades'}, {rank: 'Q', suit: 'clubs'}]
-  t.equal(cards2Table.getPercentage(cards), 10.65)
+  t.equal(cards2Table.getPercentage(cards), 4.7)
 
   cards = [{rank: 'J', suit: 'spades'}, {rank: 'J', suit: 'clubs'}]
-  t.equal(cards2Table.getPercentage(cards), 2.96)
+  t.equal(cards2Table.getPercentage(cards), 3)
+
+  cards = [{rank: '8', suit: 'spades'}, {rank: '5', suit: 'clubs'}]
+  t.equal(cards2Table.getPercentage(cards), 78.3)
 
   t.end()
 })
