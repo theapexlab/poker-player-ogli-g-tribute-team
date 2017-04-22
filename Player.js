@@ -58,10 +58,10 @@ class Player {
     // }
 
     if (!raised && percentage < 18) {
-      console.log(cards, isRaised)
+      console.log(cards, raised)
       bet(myPlayer.stack)
     } else if (raised && percentage < 6) {
-      console.log(cards, isRaised)
+      console.log(cards, raised)
       bet(myPlayer.stack)
     } else {
       bet(0)
