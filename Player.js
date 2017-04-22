@@ -1,3 +1,4 @@
+// @flow
 // var Logger = require('le_node')
 // var log = new Logger({
 //   token: 'fda2a63e-3dd4-4b70-9b73-097d51eb8d6d'
@@ -5,6 +6,8 @@
 const _ = require('underscore')
 const cards2Table = require('./cards-2-table')
 const MyStack = require('./my-stack')
+const EffectiveStack = require('./effective-stack')
+// const EffectiveStack = require('./effective-stack')
 
 // function toNum (c) {
 //   switch (c) {
@@ -56,7 +59,8 @@ class Player {
 
     // const folded = isFolded(gameState)
     const raised = isRaised(gameState)
-    const myStack = MyStack.calculate(gameState)
+    // const myStack = MyStack.calculate(gameState)
+    const effectiveStack = EffectiveStack.calculate(gameState)
 
     // if (percentage < 18) {
     //   bet(myPlayer.stack)
@@ -65,10 +69,10 @@ class Player {
     // }
 
     let betValue = 0
-    if (myStack <= 3) {
+    if (effectiveStack <= 3) {
       if (!raised && percentage < 81) betValue = myPlayer.stack
       else if (percentage < 44) betValue = myPlayer.stack
-    } else if (myStack > 3 && myStack <= 10) {
+    } else if (effectiveStack > 3 && effectiveStack <= 10) {
       if (!raised && percentage < 46) betValue = myPlayer.stack
       else if (percentage < 22) betValue = myPlayer.stack
     } else {
@@ -76,7 +80,7 @@ class Player {
       else if (percentage < 6) betValue = myPlayer.stack
     }
 
-    if (betValue) debugLog(cards, raised, percentage, myStack)
+    if (betValue) debugLog(cards, raised, percentage, effectiveStack)
     bet(betValue)
 
     // if (!raised && percentage < 18) {

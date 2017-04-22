@@ -2,8 +2,13 @@
 const test = require('tape')
 const Player = require('./Player')
 const gameStateFixture = require('./test/game-state.json')
+const gameStateFixture2 = require('./test/game-state-2.json')
+const gameStateFixture3 = require('./test/game-state-3.json')
+const gameStateFixture4 = require('./test/game-state-4.json')
+const gameStateFixture5 = require('./test/game-state-5.json')
 const cards2Table = require('./cards-2-table')
 const myStack = require('./my-stack')
+const effectiveStack = require('./effective-stack')
 
 // test.skip('correct card value',
 //   function (t) {
@@ -12,9 +17,40 @@ const myStack = require('./my-stack')
 //   }
 // )
 
-test('should work', function (t) {
+test('should work1', function (t) {
   Player.betRequest(gameStateFixture, function (bet) {
-    t.equals
+    console.log(bet)
+    t.equals(bet, 0)
+    t.end()
+  })
+})
+
+test('should work2', function (t) {
+  Player.betRequest(gameStateFixture2, function (bet) {
+    t.equals(bet, 0)
+    t.end()
+  })
+})
+
+test('should work3', function (t) {
+  Player.betRequest(gameStateFixture3, function (bet) {
+    t.equals(bet, 0)
+    t.end()
+  })
+})
+
+test('should work4', function (t) {
+  const myGameState = JSON.parse(JSON.stringify(gameStateFixture3))
+  myGameState.pot = 150
+  Player.betRequest(myGameState, function (bet) {
+    t.equals(bet, 10000)
+    t.end()
+  })
+})
+
+test('should work5', function (t) {
+  Player.betRequest(gameStateFixture5, function (bet) {
+    t.equals(bet, 10000)
     t.end()
   })
 })
@@ -58,6 +94,18 @@ test('my stack', (t) => {
   const resp = myStack.calculate(gameStateFixture)
   t.equal(resp, 79.5)
   console.log(resp)
+  t.end()
+})
+
+test('eff stack 1', (t) => {
+  const resp = effectiveStack.calculate(gameStateFixture)
+  t.equal(resp, 1010 / 20)
+  t.end()
+})
+
+test('eff stack 2', (t) => {
+  const resp = effectiveStack.calculate(gameStateFixture4)
+  t.equal(resp, 2132 / 3 / 20)
   t.end()
 })
 

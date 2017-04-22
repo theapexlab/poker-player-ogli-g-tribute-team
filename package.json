@@ -6,7 +6,8 @@
     "node": "6.x"
   },
   "scripts": {
-    "test": "node test"
+    "test": "node test",
+    "flow": "flow; test $? -eq 0 -o $? -eq 2"
   },
   "private": true,
   "dependencies": {
@@ -16,6 +17,7 @@
     "underscore": "^1.8.3"
   },
   "devDependencies": {
+    "flow-bin": "^0.44.2",
     "pre-commit": "^1.2.2",
     "tape": "^4.6.3"
   }

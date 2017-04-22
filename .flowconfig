@@ -1,0 +1,6 @@
+[ignore]
+.*/node_modules/newrelic/.*
+.*/node_modules/config-chain/.*
+[options]
+unsafe.enable_getters_and_setters=true
+suppress_comment= \\(.\\|\n\\)*\\@flow-disable-nextline
