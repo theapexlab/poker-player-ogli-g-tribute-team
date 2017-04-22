@@ -34,7 +34,7 @@ test('should work2', function (t) {
 
 test('should work3', function (t) {
   Player.betRequest(gameStateFixture3, function (bet) {
-    t.equals(bet, 0)
+    t.equals(bet, 10000)
     t.end()
   })
 })
